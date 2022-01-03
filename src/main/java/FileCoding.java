@@ -1,3 +1,5 @@
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,6 +12,7 @@ import java.nio.file.Paths;
  * In order to decode extra byte is added which informs about number of zeros added to last byte<br>
  * In above example this extra byte will have value of 4
  */
+@Slf4j
 public class FileCoding {
 
     /**
